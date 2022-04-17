@@ -9,16 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./client/src/assets/audio/low_e.m4a":
-/*!*******************************************!*\
-  !*** ./client/src/assets/audio/low_e.m4a ***!
-  \*******************************************/
-/***/ (() => {
-
-eval("throw new Error(\"Module parse failed: Unexpected character '\\u0000' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://historical-event-finder/./client/src/assets/audio/low_e.m4a?");
-
-/***/ }),
-
 /***/ "./node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js ***!
@@ -1082,7 +1072,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _mui_material_Fab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Fab */ \"./node_modules/@mui/material/Fab/Fab.js\");\n/* harmony import */ var _assets_audio_low_e_m4a__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/audio/low_e.m4a */ \"./client/src/assets/audio/low_e.m4a\");\n/* harmony import */ var _assets_audio_low_e_m4a__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_audio_low_e_m4a__WEBPACK_IMPORTED_MODULE_1__);\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== \"undefined\" && arr[Symbol.iterator] || arr[\"@@iterator\"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\nvar App = function App() {\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({\n    lowE: false,\n    a: false,\n    d: false,\n    g: false,\n    b: false,\n    highE: false\n  }),\n      _useState2 = _slicedToArray(_useState, 2),\n      strings = _useState2[0],\n      setStrings = _useState2[1];\n\n  var pluckString = function pluckString(e, note) {\n    console.log('Playing.........');\n    var audio = new Audio((_assets_audio_low_e_m4a__WEBPACK_IMPORTED_MODULE_1___default()));\n    audio.play();\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-label\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, 'lowE');\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"E\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, 'A');\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"A\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, 'D');\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"D\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, 'G');\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"G\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, 'B');\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"B\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, 'highE');\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"E\")));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://historical-event-finder/./client/src/components/App.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _mui_material_Fab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/Fab */ \"./node_modules/@mui/material/Fab/Fab.js\");\n/* harmony import */ var _assets_audio_low_e_m4a__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/audio/low_e.m4a */ \"./client/src/assets/audio/low_e.m4a\");\n/* harmony import */ var _assets_audio_a_m4a__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/audio/a.m4a */ \"./client/src/assets/audio/a.m4a\");\n/* harmony import */ var _assets_audio_d_m4a__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/audio/d.m4a */ \"./client/src/assets/audio/d.m4a\");\n/* harmony import */ var _assets_audio_g_m4a__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/audio/g.m4a */ \"./client/src/assets/audio/g.m4a\");\n/* harmony import */ var _assets_audio_b_m4a__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/audio/b.m4a */ \"./client/src/assets/audio/b.m4a\");\n/* harmony import */ var _assets_audio_high_e_m4a__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/audio/high_e.m4a */ \"./client/src/assets/audio/high_e.m4a\");\n\n\n\n\n\n\n\n\n\n\nvar App = function App() {\n  var pluckString = function pluckString(e, note) {\n    var audio = new Audio(note);\n    audio.play();\n    captureAudio(audio);\n  };\n\n  var captureAudio = function captureAudio(audio) {\n    var audioCtx = new (window.AudioContext || window.webkitAudioContex)();\n    var audioSrc = audioCtx.createMediaElementSource(audio);\n    var analyser = audioCtx.createAnalyser();\n    audioSrc.connect(analyser);\n    analyser.connect(audioCtx.destination);\n    analyser.fftSize = 256;\n    var bufferLength = analyser.frequencyBinCount;\n    var dataArray = new Uint8Array(bufferLength);\n    analyser.getByteFrequencyData(dataArray);\n    var timeRan = 0;\n    var startTime = new Date().getTime();\n    var interval = setInterval(function () {\n      timeRan++;\n      analyser.getByteFrequencyData(dataArray);\n      console.log('data: ', dataArray);\n      if (new Date().getTime() - startTime > 8000) clearInterval(interval);\n    });\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-label\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, _assets_audio_low_e_m4a__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"E\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, _assets_audio_a_m4a__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"A\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, _assets_audio_d_m4a__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"D\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, _assets_audio_g_m4a__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"G\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, _assets_audio_b_m4a__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"B\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    size: \"small\",\n    color: \"secondary\",\n    \"aria-abel\": \"add\",\n    onClick: function onClick(e) {\n      return pluckString(e, _assets_audio_high_e_m4a__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"strong\", null, \"E\")));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://historical-event-finder/./client/src/components/App.jsx?");
 
 /***/ }),
 
@@ -1094,6 +1084,72 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction toVal(mix) {\n\tvar k, y, str='';\n\n\tif (typeof mix === 'string' || typeof mix === 'number') {\n\t\tstr += mix;\n\t} else if (typeof mix === 'object') {\n\t\tif (Array.isArray(mix)) {\n\t\t\tfor (k=0; k < mix.length; k++) {\n\t\t\t\tif (mix[k]) {\n\t\t\t\t\tif (y = toVal(mix[k])) {\n\t\t\t\t\t\tstr && (str += ' ');\n\t\t\t\t\t\tstr += y;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t} else {\n\t\t\tfor (k in mix) {\n\t\t\t\tif (mix[k]) {\n\t\t\t\t\tstr && (str += ' ');\n\t\t\t\t\tstr += k;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\treturn str;\n}\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {\n\tvar i=0, tmp, x, str='';\n\twhile (i < arguments.length) {\n\t\tif (tmp = arguments[i++]) {\n\t\t\tif (x = toVal(tmp)) {\n\t\t\t\tstr && (str += ' ');\n\t\t\t\tstr += x\n\t\t\t}\n\t\t}\n\t}\n\treturn str;\n}\n\n\n//# sourceURL=webpack://historical-event-finder/./node_modules/clsx/dist/clsx.m.js?");
+
+/***/ }),
+
+/***/ "./client/src/assets/audio/a.m4a":
+/*!***************************************!*\
+  !*** ./client/src/assets/audio/a.m4a ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"8e32e6665274f15d5d97877dbf381247.m4a\");\n\n//# sourceURL=webpack://historical-event-finder/./client/src/assets/audio/a.m4a?");
+
+/***/ }),
+
+/***/ "./client/src/assets/audio/b.m4a":
+/*!***************************************!*\
+  !*** ./client/src/assets/audio/b.m4a ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"5e2246645d922991ff193e7994d1c4be.m4a\");\n\n//# sourceURL=webpack://historical-event-finder/./client/src/assets/audio/b.m4a?");
+
+/***/ }),
+
+/***/ "./client/src/assets/audio/d.m4a":
+/*!***************************************!*\
+  !*** ./client/src/assets/audio/d.m4a ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"0d485000ae3e7d22949664d461ea13df.m4a\");\n\n//# sourceURL=webpack://historical-event-finder/./client/src/assets/audio/d.m4a?");
+
+/***/ }),
+
+/***/ "./client/src/assets/audio/g.m4a":
+/*!***************************************!*\
+  !*** ./client/src/assets/audio/g.m4a ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"ba74b0d691103456a02823ee9961795e.m4a\");\n\n//# sourceURL=webpack://historical-event-finder/./client/src/assets/audio/g.m4a?");
+
+/***/ }),
+
+/***/ "./client/src/assets/audio/high_e.m4a":
+/*!********************************************!*\
+  !*** ./client/src/assets/audio/high_e.m4a ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"1ba2544f72389bbd498db2b874078ae5.m4a\");\n\n//# sourceURL=webpack://historical-event-finder/./client/src/assets/audio/high_e.m4a?");
+
+/***/ }),
+
+/***/ "./client/src/assets/audio/low_e.m4a":
+/*!*******************************************!*\
+  !*** ./client/src/assets/audio/low_e.m4a ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"8007479c3289f53c013b9d509792b69f.m4a\");\n\n//# sourceURL=webpack://historical-event-finder/./client/src/assets/audio/low_e.m4a?");
 
 /***/ }),
 
@@ -1576,6 +1632,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

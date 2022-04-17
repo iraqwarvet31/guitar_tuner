@@ -32,6 +32,10 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.m4a$/,
+        loader: 'file-loader',
+      }
     ],
   },
   mode: 'development',
