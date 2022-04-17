@@ -1,4 +1,2 @@
 node_modules/
-*.m4a
-!assets/
-!audio/
+audio/
